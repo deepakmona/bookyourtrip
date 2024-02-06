@@ -1,0 +1,116 @@
+:root{
+    --PrimaryColor:hsl(199,100%,33%);
+    --SecondaryColor:hsl(187,85%,43%);
+    --gradientColor:linear-gradient(to right,hsl(199,100%,33%),hsl(187,85%,43%));
+    --whiteColor:hsl(0,0%,100%);
+    --blackColor:hsl(201,33%,36%);
+    --textColor:hsl(240,4%,36%);
+    --whiteColorDeam:hsl(0,0%,93%);
+    --grayText:rgb(190,190,190);
+    --inputColor:rgb(239,239,239);
+    --bodyColor:rgb(240,240,246);
+    --cardBG:rgb(225,225,235);
+}
+
+.secContent{
+    justify-content: center;
+    gap:5rem;
+}
+
+
+.singleDestination{
+    height:100%;
+    display: grid;
+    overflow:hidden;
+    row-gap: 10px;
+    border-radius: 10px;
+    align-items: center;
+    background:var(--cardBG);
+    box-shadow:10px 10px 5px silver;
+}
+
+.singleDestination:hover{
+    background:var(--whiteColorDeam);
+    box-shadow:1 4px 4px rgba(140,140,141,0.549);
+    transition:0.3s ease;
+}
+
+.imageDiv{
+    height:320px;
+    width:100%;
+    overflow:hidden;
+}
+
+img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    transition:2s ease;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+.cardInfo{
+    padding:1rem;
+}
+.destTitle{
+    color:var(--blackColor);
+    font-size: 1.25rem;
+}
+
+.continent{
+    gap:.5rem;
+}
+
+.fees{
+    justify-content:space-between;
+    flex-direction:row;
+    margin:1rem 0;
+    border-top:2px solid var(--grayText);
+    border-bottom:2px solid var(--grayText);
+    padding:0.5rem;
+    width:100%;
+}
+
+.grade{
+        color:var(--textColor);
+        max-width:100px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight:bold;
+}
+
+small{
+    text-align: center;
+    background-color:var(--PrimaryColor);
+    border-radius: 1rem;
+    color:var(--whiteColor);
+    padding: 4px 10px;
+    margin-left:30px;
+    font-size:10px;
+}
+.price{
+    font-size:2rem;
+}
+.desc{
+    font-size:15px;
+    font-weight:600;
+    color:var(--textColor);
+}
+
+.btn{
+    margin-top:1rem;
+    color:var(--whiteColor);
+    font-weight:bold;
+    font-size: 18px;
+    display: inline;
+}
+
+.icon1{
+    align-self:center;
+    font-size:18px;
+}
